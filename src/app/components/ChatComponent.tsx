@@ -52,7 +52,7 @@ export default function ChatComponent() {
     >
       <div
         className="w-full h-full bg-card border border-border rounded-lg shadow-lg overflow-hidden"
-        onClick={() => { // Elimina la variable 'e'
+        onClick={() => {
           // Evita que el chat se minimice al tocar el contenido interno
           if (!isExpanded) {
             setIsExpanded(true);
@@ -64,7 +64,7 @@ export default function ChatComponent() {
             {/* Botón de minimizado */}
             <button
               className="absolute top-2 right-2 p-1 rounded-full bg-background/50 hover:bg-background/80 transition-colors z-50"
-              onClick={() => { // Elimina la variable 'e'
+              onClick={() => {
                 setIsExpanded(false);
               }}
             >
